@@ -1,0 +1,8 @@
+def python_snake(xs):
+ import itertools as i
+ d=[(1,0),(0,1),(-1,0),(0,-1)];p=[(0,0)];a=b=0
+ for m,s in zip(i.cycle(d),x):[p.append((a:=a+m[0],b:=b+m[1]))for _ in[0]*s]
+ o=lambda i:min(z[i]for z in p);p=[(a-o(0),b-o(1))for a,b in p]
+ w,h=max(x for x,y in p)+1,max(y for x,y in p)+1;g=[[" "]*w for _ in[0]*h]
+ for i,(x,y)in enumerate(p):g[y][x]="H"if i<1 else"T"if i+1==len(p)else"x"
+ return g
