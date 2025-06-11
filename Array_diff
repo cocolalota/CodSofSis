@@ -1,0 +1,10 @@
+def array_diff(a, b):
+    lista1 = [1,2,3,4]
+    lista2 = [1,2,3,4,5]
+    
+    diferencias =[]
+    for i in lista1:
+        if i in lista2[]
+        diferencia.append(i)
+        print(diferencias)
+    return
