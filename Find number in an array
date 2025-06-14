@@ -1,0 +1,11 @@
+def duplicate_or_unique(inList):
+    n1 = len(inList) - 1
+    s1 = n1 * (n1 + 1) // 2
+    d = sum(inList) - s1
+    if inList.count(d) == 2:
+        return d
+    n2 = (len(inList) + 1) // 2
+    s2 = n2 * (n2 + 1) // 2
+    u = s2 * 2 - sum(inList)
+    if inList.count(u) == 1:
+        return u
